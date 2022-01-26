@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="./src/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/assets/calculator.jpg">
+    <title>Calculator</title>
+  </head>
+  <body>
+    <script src="./src/script.js"></script>
+    <div id="main">
+      <div id="textview" name="textview">
+        <p id="history"></p>
+			  <p id="output"></p>
+      </div>
+      <table>
+        <tr>
+          <td><input class="button" type="button" onclick='clean()' value="C"></input></td>
+          <td><input class="button" type="button" onclick='clean()' value="CE"></input></td>
+          <td><input class="button" type="button" onclick='deleteLast()' value="⬅"></input></td>
+          <td><input class="button" type="button" onclick='add("-")' value="-"></input></td>
+        </tr>
+        <tr>
+          <td><input class="button" type="button" onclick='add(1)' value="1"></input></td>
+          <td><input class="button" type="button" onclick='add(2)' value="2"></input></td>
+          <td><input class="button" type="button" onclick='add(3)' value="3"></input></td>
+          <td><input class="button" type="button" onclick='add("/")' value="/"></input></td>
+        </tr>
+        <tr>
+          <td><input class="button" type="button" onclick='add(4)' value="4"></input></td>
+          <td><input class="button" type="button" onclick='add(5)' value="5"></input></td>
+          <td><input class="button" type="button" onclick='add(6)' value="6"></input></td>
+          <td><input class="button" type="button" onclick='add("*")' value="*"></input></td>
+        </tr>
+        <tr>
+          <td><input class="button" type="button" onclick='add(7)' value="7"></input></td>
+          <td><input class="button" type="button" onclick='add(8)' value="8"></input></td>
+          <td><input class="button" type="button" onclick='add(9)' value="9"></input></td>
+          <td><input class="button" type="button" onclick='add("+")' value="+"></input></td>
+        </tr>
+       <tr>
+          <td><input class="button" type="button" onclick='add(0)' value="0"></input></td>
+          <td><input class="button" type="button" onclick='add(".")' value=","></input></td>
+          <td><input class="button" type="button" onclick='igual()' value="="></input></td>
+          <td><input class="button" type="button" onclick='add("-")' value="-"></input></td>
+       </tr>
+      </table>
+    </div>
+  </body>
+</html>
